@@ -2,7 +2,7 @@ import React from 'react';
 
 const Announcement = ()=> {
     return (
-        <div className="Announcement">
+        <div className="Announcement Container">
             <div className="Announcement-title">
                 Arriendo
             </div>

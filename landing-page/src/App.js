@@ -3,6 +3,7 @@ import Header from './components/header';
 import Welcome from './components/Welcome';
 import Announcement from './components/announcement';
 import Form from './components/form';
+import CreateAd from './components/CreateAd';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Welcome/>
       <Announcement/>
       <Form/>
+      <CreateAd/>
     </div>
   );
 }

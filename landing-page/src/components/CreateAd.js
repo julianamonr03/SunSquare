@@ -10,26 +10,47 @@ const CreateAd = ()=> {
                 <form>
                     <div class="form-group form-item">
                         <label for="exampleFormControlSelect1">Type</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <select
+                            class="form-control"
+                            id="exampleFormControlSelect1"
+                        >
                         <option>Arriendo</option>
                         <option>Venta</option>
                         </select>
                     </div>
                     <div class="form-group form-item">
                         <label for="exampleFormControlInput1">Price</label>
-                        <input type="email" class="form-control b-color" id="exampleFormControlInput1" placeholder=""/>
+                        <input 
+                            type="email"
+                            class="form-control b-color"
+                            id="exampleFormControlInput1"
+                            placeholder=""
+                        />
                     </div>
                     <div class="form-group form-item">
                         <label for="exampleFormControlInput1">City</label>
-                        <input type="email" class="form-control b-trans" id="exampleFormControlInput1" placeholder=""/>
+                        <input 
+                            type="text"
+                            class="form-control b-trans"
+                            id="exampleFormControlInput1"
+                            placeholder=""
+                        />
                     </div>
                     <div class="form-group form-item">
                         <label for="exampleFormControlInput1">Neighborhood</label>
-                        <input type="email" class="form-control b-trans" id="exampleFormControlInput1" placeholder="name@example.com"/>
+                        <input
+                            type="email"
+                            class="form-control b-trans"
+                            id="exampleFormControlInput1"
+                            placeholder="name@example.com"
+                        />
                     </div>
                     <div class="form-group form-item">
                         <label for="exampleFormControlSelect1">Number of Rooms</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <select
+                            class="form-control"
+                            id="exampleFormControlSelect1"
+                        >
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -38,7 +59,10 @@ const CreateAd = ()=> {
                     </div>
                     <div class="form-group form-item">
                         <label for="exampleFormControlSelect1">Number of Bathrooms</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <select
+                            class="form-control"
+                            id="exampleFormControlSelect1"
+                        >
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>

@@ -1,11 +1,25 @@
 import React, {Fragment, useState} from 'react';
+//import {useForm} from 'react-hook-form';
 
-const Form = ()=> {
+const User = ()=> {
     const [datos, setDatos] = useState({
-        nombre: "",
-        apellido: ""
+        firstName: "",
+        lastName: "",
+        email: "",
+        age: "",
+        typeOfWork: "",
+        incomes: "",
+        phoneNumber: "",
+        references: ""
     })
+/*
+    const {register, errors, handleSubmit} = useForm();
 
+    const onSubmit = (data, e)=> {
+        console.log(data)
+        e.target.reset()
+    }
+*/
     const handleInputChance = (event)=> {
         setDatos({
             ...datos,
@@ -13,46 +27,67 @@ const Form = ()=> {
         })
     }
 
-    const enviarDatos = (event)=> {
+    const sendData = (event)=> {
         event.preventDefault();
-        console.log(`Mi nombre es: ${datos.nombre}  ${datos.apellido}`)
+        console.log({datos})
+        /*fetch("http://35.231.58.85/users", {
+            method: "POST",
+            body: JSON.stringify({
+                datos
+      }),
+      headers: {
+        "Content-type": "application/json; charset: UTF-8"
+      }
+    });*/
     }
 
     return(
         <div className="Container mt-5 Form">
             <Fragment>
-                <h1>Sing up</h1>
+                <h1>Sign up</h1>
                 <hr></hr>
-                <form onSubmit={enviarDatos}>
-                    <div class="form-group form-item">
+                <form onSubmit={sendData}>
+                    <div className="form-group form-item">
                         <label for="exampleFormControlInput1">First Name</label>
                         <input
                             type="text"
-                            class="form-control b-color"
+                            className="form-control b-color"
                             id="exampleFormControlInput1"
                             placeholder=""
-                            name="nombre"
+                            name="firstName"
                             onChange={handleInputChance}
                         />
                     </div>
-                    <div class="form-group form-item">
+                    <div className="form-group form-item">
                         <label for="exampleFormControlInput1">Last Name</label>
                         <input
                             type="text"
-                            class="form-control b-trans"
+                            className="form-control b-trans"
                             id="exampleFormControlInput1"
                             placeholder=""
-                            name="apellido"
+                            name="lastName"
                             onChange={handleInputChance}
                         />
                     </div>
-                    <div class="form-group form-item">
+                    <div className="form-group form-item">
                         <label for="exampleFormControlInput1">Email address</label>
-                        <input type="email" class="form-control b-trans" id="exampleFormControlInput1" placeholder="name@example.com"/>
+                        <input 
+                            type="email"
+                            className="form-control b-trans"
+                            id="exampleFormControlInput1"
+                            placeholder="name@example.com"
+                            name="email"
+                            onChange={handleInputChance}
+                        />
                     </div>
-                    <div class="form-group form-item">
+                    <div className="form-group form-item">
                         <label for="exampleFormControlSelect1">Age</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <select
+                            className="form-control"
+                            id="exampleFormControlSelect1"
+                            name="age"
+                            onChange={handleInputChance}
+                        >
                         <option>18-20</option>
                         <option>20-30</option>
                         <option>30-40</option>
@@ -60,24 +95,61 @@ const Form = ()=> {
                         <option>Mayor de 50 años</option>
                         </select>
                     </div>
-                    <div class="form-group form-item">
+                    <div className="form-group form-item">
                         <label for="exampleFormControlInput1">Type of work</label>
-                        <input type="email" class="form-control b-trans" id="exampleFormControlInput1" placeholder="example: Software Developer"/>
+                        <input
+                            type="text"
+                            className="form-control b-trans"
+                            id="exampleFormControlInput1"
+                            placeholder="example: Software Developer"
+                            name="typeOfWork"
+                            onChange={handleInputChance}
+                        />
                     </div>
-                    <div class="form-group form-item">
-                        <label for="exampleFormControlInput1">Incomes</label>
-                        <input type="email" class="form-control b-trans" id="exampleFormControlInput1" placeholder=""/>
+                    <div className="form-group form-item">
+                        <label for="exampleFormControlInput1">Incomes (COP)</label>
+                        <select
+                            className="form-control"
+                            id="exampleFormControlSelect1"
+                            name="incomes"
+                            onChange={handleInputChance}
+                        >
+                        <option>0 - 1'000.000</option>
+                        <option>1'000'001 - 2'000.000</option>
+                        <option>2'000.001 - 3'000.000</option>
+                        <option>3'000.001 - 4'000.000</option>
+                        <option>More of 4'000.000</option>
+                        </select>
                     </div>
-                    <div class="form-group form-item">
+                    <div className="form-group form-item">
                         <label for="exampleFormControlInput1">Phone Number</label>
-                        <input type="email" class="form-control b-trans" id="exampleFormControlInput1" placeholder=""/>
+                        <input
+                            type="number"
+                            className="form-control b-trans" 
+                            id="exampleFormControlInput1" 
+                            placeholder=""
+                            name="phoneNumber"
+                            onChange={handleInputChance}
+                        />
                     </div>
-                    <div class="form-group form-item">
+                    <div className="form-group form-item">
                         <label for="exampleFormControlTextarea1">References</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea
+                            className="form-control"
+                            id="exampleFormControlTextarea1"
+                            rows="3"
+                            name="references"
+                            onChange={handleInputChance}
+                        >
+
+                        </textarea>
                     </div>
                     <div>
-                        <button class="btn btn-primary Margin-left">Send</button>
+                        <button
+                            className="btn btn-primary Margin-left"
+                        >
+                            Send
+                        </button>
                     </div>
                 </form>
             </Fragment>
@@ -86,4 +158,4 @@ const Form = ()=> {
     )
 }
 
-export default Form
+export default User

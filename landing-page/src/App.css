@@ -1,6 +1,6 @@
 body {
   /*background-image: radial-gradient(circle at 22.93% 22.93%, #514476 0, #1f1f59 50%, #00003e 100%);*/
-  background-color: black;
+  background-color: #353b48;
   color: white;
 }
 
@@ -68,7 +68,7 @@ body {
   justify-content:space-between;
   z-index: 2;
   left: 37vw;
-  top: 16vw;
+  top: 14vw;
   font-size: 1.5vw;
 }
 .Welcome-search {
@@ -80,7 +80,7 @@ body {
   justify-content: center;
   z-index: 2;
   left: 25vw;
-  top: 35vw;
+  top: 34vw;
 }
 .Search-space{
   width: 25% !important;
@@ -204,6 +204,6 @@ body {
 
 
 .Color-white {
-  color:white;
+  color:#0FD9AC;
 }
 

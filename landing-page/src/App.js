@@ -2,8 +2,10 @@ import './App.css';
 import Header from './components/header';
 import Welcome from './components/Welcome';
 import Announcement from './components/announcement';
-import Form from './components/form';
+import User from './components/form';
 import CreateAd from './components/CreateAd';
+import Form from './components/CreateAnnoun';
+/*import FormPrueba from './components/FormPrueba';*/
 
 function App() {
   return (
@@ -11,8 +13,9 @@ function App() {
       <Header/>
       <Welcome/>
       <Announcement/>
-      <Form/>
+      <User/>
       <CreateAd/>
+      <Form/>
     </div>
   );
 }

@@ -10,7 +10,7 @@ const Header = () => {
                 <li className="NavBar-Items"><a href="CreateAd" class="Color-white">Create your ad</a></li>
             </ul>
             <div>
-                <a href="#Profile" class="Color-white">Profile</a>
+                <a class="Color-white">Sign</a>
             </div>
         </nav>
     )

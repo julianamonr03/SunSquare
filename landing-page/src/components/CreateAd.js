@@ -12,7 +12,7 @@ const CreateAd = ()=> {
         carpark: "",
         buildingfees: "",
         contact: "",
-        footage: ""
+        description: ""
     })
 /*
     const {register, errors, handleSubmit} = useForm();
@@ -159,15 +159,14 @@ const CreateAd = ()=> {
                         />
                     </div>
                     <div className="form-group form-item">
-                        <label for="exampleFormControlTextarea1">Footage</label>
+                        <label for="exampleFormControlTextarea1">Description</label>
                         <textarea
                             className="form-control"
                             id="exampleFormControlTextarea1"
                             rows="3"
-                            name="footage"
+                            name="description"
                             onChange={handleInputChance}
                         >
-
                         </textarea>
                     </div>
                     <div>

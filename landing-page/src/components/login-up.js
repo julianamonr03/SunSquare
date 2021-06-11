@@ -151,7 +151,8 @@ const UserForm = ()=> {
                     </div>
                 </form>
             </Fragment>
-            
+            <img className="Img-min" src="https://images.unsplash.com/photo-1523192193543-6e7296d960e4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Apto1"></img>
+                    
         </div>  
     )
 }

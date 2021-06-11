@@ -42,8 +42,9 @@ body {
 
 .Welcome {
   position: relative;
+  top: 0vw;
   height: 50vw;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 .Welcome-image {
@@ -102,7 +103,6 @@ body {
   width: 60vw;
   height: 25vw;
   margin: auto;
-  margin-top: 2vw;
   margin-bottom: 2vw;
 }
 

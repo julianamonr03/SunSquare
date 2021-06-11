@@ -1,7 +1,7 @@
 import React, {Fragment, useState} from 'react';
 //import {useForm} from 'react-hook-form';
 
-const User = ()=> {
+const UserForm = ()=> {
     const [datos, setDatos] = useState({
         firstName: "",
         lastName: "",
@@ -30,7 +30,7 @@ const User = ()=> {
     const sendData = (event)=> {
         event.preventDefault();
         console.log({datos})
-        /*fetch("http://35.231.58.85/users", {
+        fetch("http://35.231.58.85/users", {
             method: "POST",
             body: JSON.stringify({
                 datos
@@ -38,11 +38,11 @@ const User = ()=> {
       headers: {
         "Content-type": "application/json; charset: UTF-8"
       }
-    });*/
+    });
     }
 
     return(
-        <div className="Container mt-5 Form">
+        <div className="Container Form margin-top">
             <Fragment>
                 <h1>Sign up</h1>
                 <hr></hr>
@@ -145,9 +145,7 @@ const User = ()=> {
                         </textarea>
                     </div>
                     <div>
-                        <button
-                            className="btn btn-primary Margin-left"
-                        >
+                        <button className="btn btn-primary Margin-left">
                             Send
                         </button>
                     </div>
@@ -158,4 +156,4 @@ const User = ()=> {
     )
 }
 
-export default User
+export default UserForm

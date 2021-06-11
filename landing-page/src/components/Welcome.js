@@ -20,8 +20,8 @@ const UserSearch = ()=> {
                         class="custom-select"
                         id="inputGroupSelect01"
                     >
-                        <option value="1">Arriendo</option>
-                        <option value="2">Venta</option>
+                        <option value="1">On rent</option>
+                        <option value="2">On sale</option>
                     </select>
                 </div>
             </div>

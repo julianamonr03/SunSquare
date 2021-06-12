@@ -8,10 +8,10 @@ class Config:
 
 class DevelopmentConfig(Config):
     DEBUG = True
-    MYSQL_HOST='localhost'
-    MYSQL_USER='root'
-    MYSQL_PASSWORD='sunsquare'
-    MYSQL_DB='sunsquare' #Nombre de la base de datos
+    MYSQL_HOST = "localhost"
+    MYSQL_USER = "root"
+    MYSQL_PASSWORD = ""
+    MYSQL_DB = "sunsquare"  # Nombre de la base de datos
 
 
 config = {"development": DevelopmentConfig, "default": DevelopmentConfig}

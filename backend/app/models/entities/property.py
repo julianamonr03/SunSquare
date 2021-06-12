@@ -1,4 +1,4 @@
-class Property:
+class Property():
     def __init__(
         self,
         id,

@@ -4,9 +4,10 @@ from .entities.property import Property
 class ModelAnnoun:
     @classmethod
     def list_announ(self, db):
+        """ Function for list the properties saved in database """
         try:
             point = db.connection.point()
-            sql = """SELECT id, type, location, price, neighborhood, city, carpark, footage, numbath, numroom FROM property ORDER BY ASC"""
+            sql = """SELECT id, type, price, neighborhood, city, carpark, footage, numbath, numroom FROM properties ORDER BY ASC"""
             point.execute(sql)
             data = point.fetchall()
             properties = []
@@ -14,13 +15,7 @@ class ModelAnnoun:
                 proper = Property(
                     row[1],
                     row[2],
-                    row[3],
-                    row[4],
-                    row[5],
-                    row[6],
-                    row[7],
-                    row[8],
-                    row[9],
+                    row[3]
                 )
                 properties.append(proper)
             return properties

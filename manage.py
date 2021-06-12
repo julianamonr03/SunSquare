@@ -1,6 +1,7 @@
-from flask_script import Manager, Server
-from backend.app import initiate_app
 from config import config
+from backend.app import initiate_app
+from flask_script import Manager, Server
+
 
 configuration = config["development"]
 app = initiate_app(configuration)

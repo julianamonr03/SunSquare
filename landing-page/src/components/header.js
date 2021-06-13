@@ -9,47 +9,52 @@ import Welcome from './Welcome';
 import Announcement from './announcement';
 import UserForm from './login-up';
 import CreateAd from './CreateAd';
+import SignIn from './SignIn';
 
 const Header = () => {
     return (
         <Router>
             <nav className="Header">
                 <div>
-                    <ul className="NavBar">
-                        <li className="NavBar-Items"><a href="#" class="Color-white"><span>SunSquare</span></a></li>
+                    <div className="NavBar">
+                        <div className="NavBar-Items"><a href="#" class="color-font"><span>SunSquare</span></a></div>
                         <Link to="/">
-                            <li className="NavBar-Items"><a href="Home" class="Color-white">Home</a></li>
+                            <div className="NavBar-Items"><a href="Home" class="color-font">Home</a></div>
                         </Link>
                         <Link to="/announcements">
-                            <li className="NavBar-Items"><a href="Announcement" class="Color-white">Announcements</a></li>
+                            <div className="NavBar-Items"><a href="Announcement" class="color-font">Announcements</a></div>
                         </Link>
                         <Link to="/create-ad">
-                            <li className="NavBar-Items"><a href="CreateAd" class="Color-white">Create your ad</a></li>
+                            <div className="NavBar-Items"><a href="CreateAd" class="color-font">Create your ad</a></div>
                         </Link> 
-                    </ul>
+                    </div>
                 </div>
                 
                 <div>
-                    <ul className="NavBar">
-                        <Link>
-                            <li className="NavBar-Items"><a class="Color-white">Sign In</a></li>
+                    <div className="NavBar">
+                        <Link to="/sign-in">
+                            <div className="NavBar-Items"><a class="color-font">Sign In</a></div>
                         </Link>
                         <Link to="/sign-up">
-                            <li className="NavBar-Items"><a class="Color-white">Sign Up</a></li>
+                            <div className="NavBar-Items"><a class="color-font">Sign Up</a></div>
                         </Link>
-                    </ul>
+                    </div>
                 </div>
             </nav>
             <Switch>
                 <Route path="/announcements">
                     <Announcement/>
                 </Route>
-                <Route path="/sign-up">
-                    <UserForm/>
-                </Route>
                 <Route path="/create-ad">
                     <CreateAd/>
                 </Route>
+                <Route path="/sign-in">
+                    <SignIn/>
+                </Route>
+                <Route path="/sign-up">
+                    <UserForm/>
+                </Route>
+                
                 <Route path="/" exact>
                     <Welcome/>
                 </Route>

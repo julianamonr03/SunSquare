@@ -27,36 +27,36 @@ const Announcement = ()=> {
             </div>
             <div className="announcement-card">
                 <div id="carouselExampleInterval" className="carousel slide card-img" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-interval="10000">
+                    <div className="carousel-inner">
+                        <div className="carousel-item active" data-interval="10000">
                             <img 
                                 src="https://images.unsplash.com/photo-1494203484021-3c454daf695d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw0ODEyOTQzfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                 className="d-block img-min" 
                                 alt="..."
                             />
                         </div>
-                        <div class="carousel-item" data-interval="2000">
+                        <div className="carousel-item" data-interval="2000">
                             <img 
                                 src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MjB8NDgxMjk0M3x8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
-                                class="d-block w-100 img-min" 
+                                className="d-block w-100 img-min" 
                                 alt="..."
                             />
                         </div>
-                        <div class="carousel-item ">
+                        <div className="carousel-item ">
                             <img 
                                 src="https://images.unsplash.com/photo-1574873215043-44119461cb3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3w4NTc4MzEyfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                                class="d-block w-100 img-min" 
+                                className="d-block w-100 img-min" 
                                 alt="..."
                             />
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
+                    <a className="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
+                    <a className="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="sr-only">Next</span>
                     </a>
                 </div>
                 

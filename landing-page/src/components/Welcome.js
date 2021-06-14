@@ -4,9 +4,9 @@ const UserSearch = ()=> {
     return(
         <div className="Welcome-search">
             <div className="Align-center Search-space">
-                <div class="input-group mb-3">
+                <div className="input-group mb-3">
                     <select 
-                        class="custom-select"
+                        className="custom-select"
                         id="inputGroupSelect01"
                     >
                         <option value="1">Apartment</option>
@@ -15,9 +15,9 @@ const UserSearch = ()=> {
                 </div>
             </div>
             <div className="Align-center Search-space Margin-left">
-                <div class="input-group mb-3">
+                <div className="input-group mb-3">
                     <select
-                        class="custom-select"
+                        className="custom-select"
                         id="inputGroupSelect01"
                     >
                         <option value="1">On rent</option>
@@ -25,9 +25,9 @@ const UserSearch = ()=> {
                     </select>
                 </div>
             </div>
-            <input type="text" class="form-control Search-space-1 Margin-left" placeholder="City or Neighborhood" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"></input>
+            <input type="text" className="form-control Search-space-1 Margin-left" placeholder="City or Neighborhood" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"></input>
 
-            <button type="button" class="btn btn-primary Margin-left">Search</button>
+            <button type="button" className="btn btn-primary Margin-left">Search</button>
         </div>
     )
 }

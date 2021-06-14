@@ -17,15 +17,15 @@ const Header = () => {
             <nav className="Header">
                 <div>
                     <div className="NavBar">
-                        <div className="NavBar-Items"><a href="#" class="color-font"><span>SunSquare</span></a></div>
+                        <div className="NavBar-Items"><a href="#" className="color-font"><span>SunSquare</span></a></div>
                         <Link to="/">
-                            <div className="NavBar-Items"><a href="Home" class="color-font">Home</a></div>
+                            <div className="NavBar-Items"><a href="Home" className="color-font">Home</a></div>
                         </Link>
                         <Link to="/announcements">
-                            <div className="NavBar-Items"><a href="Announcement" class="color-font">Announcements</a></div>
+                            <div className="NavBar-Items"><a href="Announcement" className="color-font">Announcements</a></div>
                         </Link>
                         <Link to="/create-ad">
-                            <div className="NavBar-Items"><a href="CreateAd" class="color-font">Create your ad</a></div>
+                            <div className="NavBar-Items"><a href="CreateAd" className="color-font">Create your ad</a></div>
                         </Link> 
                     </div>
                 </div>
@@ -33,10 +33,10 @@ const Header = () => {
                 <div>
                     <div className="NavBar">
                         <Link to="/sign-in">
-                            <div className="NavBar-Items"><a class="color-font">Sign In</a></div>
+                            <div className="NavBar-Items"><a className="color-font">Sign In</a></div>
                         </Link>
                         <Link to="/sign-up">
-                            <div className="NavBar-Items"><a class="color-font">Sign Up</a></div>
+                            <div className="NavBar-Items"><a className="color-font">Sign Up</a></div>
                         </Link>
                     </div>
                 </div>

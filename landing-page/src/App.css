@@ -213,7 +213,7 @@ body {
   height: 70vh;
   display: flex;
   flex-direction: column;
-  justify-content:start;
+  justify-content:flex-start;
   padding-top: 4vw;
 }
 .sign-item {

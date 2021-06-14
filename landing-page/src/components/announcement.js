@@ -1,5 +1,5 @@
 import React from 'react';
-import CreateAd from './CreateAd';
+
 
 const Announcement = ()=> {
     const info = {

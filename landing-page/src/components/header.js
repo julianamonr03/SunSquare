@@ -17,7 +17,7 @@ const Header = () => {
             <nav className="Header">
                 <div>
                     <div className="NavBar">
-                        <div className="NavBar-Items"><a href="#" className="color-font"><span>SunSquare</span></a></div>
+                        <div className="NavBar-Items"><a href="Sunsquare" className="color-font"><span>SunSquare</span></a></div>
                         <Link to="/">
                             <div className="NavBar-Items"><a href="Home" className="color-font">Home</a></div>
                         </Link>
@@ -33,10 +33,10 @@ const Header = () => {
                 <div>
                     <div className="NavBar">
                         <Link to="/sign-in">
-                            <div className="NavBar-Items"><a className="color-font">Sign In</a></div>
+                            <div className="NavBar-Items"><a href="SignIn" className="color-font">Sign In</a></div>
                         </Link>
                         <Link to="/sign-up">
-                            <div className="NavBar-Items"><a className="color-font">Sign Up</a></div>
+                            <div className="NavBar-Items"><a href="SignUp" className="color-font">Sign Up</a></div>
                         </Link>
                     </div>
                 </div>

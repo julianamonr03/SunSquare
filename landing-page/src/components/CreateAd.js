@@ -29,22 +29,10 @@ const CreateAd = ()=> {
         })
     }
 
-    const toJson = (datos)=> {
-        let datas = JSON.stringify(datos);
-        console.log(datas);
-    }
-
-    const city = {
-        name: "Bogotá",
-        country: "Colombia"
-    }
-
-
-
-
+    
     const sendData = (event)=> {
         event.preventDefault();
-        toJson(city);
+        console.log(datos);
         /*fetch("http://35.231.58.85/users", {
             method: "POST",
             body: JSON.stringify({
@@ -55,7 +43,6 @@ const CreateAd = ()=> {
       }
     });*/
     }
-
 
 
     return(

@@ -1,6 +1,11 @@
 import React from 'react';
+import {useNavigate} from 'react';
+
 
 const UserSearch = ()=> {
+    const navigate = useNavigate();
+    const goToAnnoun = () => navigate('/announcements');
+    
     return(
         <div className="Welcome-search">
             <div className="Align-center Search-space">
@@ -27,7 +32,7 @@ const UserSearch = ()=> {
             </div>
             <input type="text" className="form-control Search-space-1 Margin-left" placeholder="City or Neighborhood" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"></input>
 
-            <button type="button" className="btn btn-primary Margin-left">Search</button>
+            <button onClick={goToAnnoun}type="button" className="btn btn-primary Margin-left">Search</button>
         </div>
     )
 }
@@ -40,7 +45,7 @@ const Welcome = ()=> {
             </div>
             <div className="Welcome-mesage">
                 <div ></div>
-                <div>¿What are you looking for?</div>
+                <div>What are you looking for?</div>
             </div>
             <UserSearch/>
         </div>
@@ -48,3 +53,32 @@ const Welcome = ()=> {
 }
 
 export default Welcome;
+
+{/*
+class MyComponent extends React.Component {
+    state = {
+      redirect: false
+    }
+    setRedirect = () => {
+      this.setState({
+        redirect: true
+      })
+    }
+    renderRedirect = () => {
+      if (this.state.redirect) {
+        return <Redirect to='/target' />
+      }
+    }
+    render () {
+      return (
+         <div>
+          {this.renderRedirect()}
+          <button onClick={this.setRedirect}>Redirect</button>
+         </div>
+      )
+    }
+  }
+
+const navigate = useNavigate();
+const goToAnnoun = () => navigate('/announcements');
+*/}

@@ -25,7 +25,7 @@ const Header = () => {
                             <div className="NavBar-Items"><a href="Announcement" className="color-font">Announcements</a></div>
                         </Link>
                         <Link to="/create-ad">
-                            <div className="NavBar-Items"><a href="CreateAd" className="color-font">Create your ad</a></div>
+                            <div className="NavBar-Items"><a href="CreateAd" className="color-font">Create your Advertisement</a></div>
                         </Link> 
                     </div>
                 </div>
@@ -43,7 +43,12 @@ const Header = () => {
             </nav>
             <Switch>
                 <Route path="/announcements">
+                    <div className="top">
                     <Announcement/>
+                    <Announcement/>
+                    <Announcement/>
+                    </div>
+                    
                 </Route>
                 <Route path="/create-ad">
                     <CreateAd/>

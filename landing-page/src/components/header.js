@@ -10,6 +10,7 @@ import Announcement from './announcement';
 import UserForm from './login-up';
 import CreateAd from './CreateAd';
 import SignIn from './SignIn';
+import UserLog from './User-log';
 
 const Header = () => {
     return (
@@ -21,15 +22,16 @@ const Header = () => {
                         <Link to="/">
                             <div className="NavBar-Items"><a href="Home" className="color-font">Home</a></div>
                         </Link>
-                        <Link to="/myAnnouncement">
+                        <Link to="/my-announcements">
                             <div className="NavBar-Items"><a href="Announcement" className="color-font">My Announcements</a></div>
                         </Link>
                         <Link to="/create-ad">
                             <div className="NavBar-Items"><a href="CreateAd" className="color-font">Create your Advertisement</a></div>
-                        </Link> 
+                        </Link>
+                        
                     </div>
                 </div>
-                
+               
                 <div>
                     <div className="NavBar">
                         <Link to="/sign-in">
@@ -48,7 +50,9 @@ const Header = () => {
                     <Announcement/>
                     <Announcement/>
                     </div>
-                    
+                </Route>
+                <Route path="/my-announcements">
+                    <UserLog/>
                 </Route>
                 <Route path="/create-ad">
                     <CreateAd/>
@@ -58,11 +62,7 @@ const Header = () => {
                 </Route>
                 <Route path="/sign-up">
                     <UserForm/>
-                </Route>
-                <Route path="/my-announcement">
-                    
-                </Route>
-                
+                </Route>               
                 <Route path="/" exact>
                     <Welcome/>
                 </Route>

@@ -41,6 +41,21 @@ body {
   padding: 0px 10px;
   text-decoration: none;
 }
+.user-log {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-log-img {
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 2px 10px #0FD9AC;
+  width: 3vw;
+  height: 3vw;
+  margin-right: 0.5vw;
+}
 
 .Welcome {
   position: relative;

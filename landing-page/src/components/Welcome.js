@@ -1,10 +1,13 @@
 import React from 'react';
-import {useNavigate} from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from 'react-router-dom';
 
 
 const UserSearch = ()=> {
-    const navigate = useNavigate();
-    const goToAnnoun = () => navigate('/announcements');
     
     return(
         <div className="Welcome-search">
@@ -31,8 +34,11 @@ const UserSearch = ()=> {
                 </div>
             </div>
             <input type="text" className="form-control Search-space-1 Margin-left" placeholder="City or Neighborhood" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"></input>
-
-            <button onClick={goToAnnoun}type="button" className="btn btn-primary Margin-left">Search</button>
+            <button className="btn btn-primary Margin-left">
+                <Link to="/announcements">
+                    <a href="Announcement" className="color-white">Search</a>
+                </Link>
+            </button>
         </div>
     )
 }

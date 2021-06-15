@@ -21,8 +21,8 @@ const Header = () => {
                         <Link to="/">
                             <div className="NavBar-Items"><a href="Home" className="color-font">Home</a></div>
                         </Link>
-                        <Link to="/announcements">
-                            <div className="NavBar-Items"><a href="Announcement" className="color-font">Announcements</a></div>
+                        <Link to="/myAnnouncement">
+                            <div className="NavBar-Items"><a href="Announcement" className="color-font">My Announcements</a></div>
                         </Link>
                         <Link to="/create-ad">
                             <div className="NavBar-Items"><a href="CreateAd" className="color-font">Create your Advertisement</a></div>
@@ -58,6 +58,9 @@ const Header = () => {
                 </Route>
                 <Route path="/sign-up">
                     <UserForm/>
+                </Route>
+                <Route path="/my-announcement">
+                    
                 </Route>
                 
                 <Route path="/" exact>

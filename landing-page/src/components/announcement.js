@@ -2,6 +2,33 @@ import React, { useState, useEffect } from 'react';
 
 
 const Announcement = (data)=> {
+
+    const ads = [
+        {   type: "On Rent",
+            price: "3'000.000",
+            city: "Bogotá",
+            neighborhood: "Chapinero",
+            rooms: "3",
+            bathrooms: "2",
+            carpark: "1",
+            buildingfees: "50",
+            contact: "3225646",
+            description: "Nice Apartment in a exclusive zone, with a great view."
+        }
+        {   type: "On Rent",
+            price: "2'000.000",
+            city: "Bogotá",
+            neighborhood: "Chapinero Alto",
+            rooms: "1",
+            bathrooms: "1",
+            carpark: "1",
+            buildingfees: "30",
+            contact: "322564624",
+            description: "Nice Apartment in a exclusive zone, with a great view."
+        }
+    ]
+    
+
     const info = {
         type: "On Rent",
         price: "3'000.000",

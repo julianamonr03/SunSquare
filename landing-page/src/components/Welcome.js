@@ -34,11 +34,17 @@ const UserSearch = ()=> {
                 </div>
             </div>
             <input type="text" className="form-control Search-space-1 Margin-left" placeholder="City or Neighborhood" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"></input>
-            <button className="btn btn-primary Margin-left">
-                <Link to="/announcements">
-                    <a href="Announcement" className="color-white">Search</a>
+            <Link to="/announcements"  className="btn btn-primary Margin-left my-button">
+                Search
+            </Link>
+            
+            
+            
+            {/*<button className="btn btn-primary Margin-left my-button">
+                <Link to="/announcements"  className="color-font pointer">
+                    Search
                 </Link>
-            </button>
+    </button>*/}
         </div>
     )
 }

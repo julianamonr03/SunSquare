@@ -44,6 +44,16 @@ body {
   max-height: 6vw;
   align-items: center;
 }
+
+.NavBar-Items:hover {
+  display: flex;
+  padding: 0vw 1vw;
+  cursor: pointer;
+  min-height: 4vw;
+  max-height: 6vw;
+  align-items: center;
+}
+
 .user-log {
   display: flex;
   flex-direction: row;
@@ -302,6 +312,12 @@ body {
   list-style: none !important;
 }
 
+.color-font:hover {
+  color:white;
+  text-decoration: none !important;
+  list-style: none !important;
+}
+
 .margin-top {
   position: relative;
   top: 10vw;
@@ -317,4 +333,23 @@ body {
 
 .color-white {
   color: white;
+}
+
+.my-button {
+  cursor: pointer !important;
+  justify-content: center !important;
+  background-color: #0FD9AC !important;
+  color: black;
+  border-color: #0FD9AC !important;
+}
+.my-button:hover {
+  cursor: pointer !important;
+  justify-content: center !important;
+  background-color: black !important;
+  color: #0FD9AC;
+  border-color: #0FD9AC !important;
+}
+
+.pointer {
+  cursor: pointer;
 }

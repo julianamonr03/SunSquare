@@ -5,14 +5,6 @@ import {
     Route,
     Link
 } from 'react-router-dom';
-import {
-    Nav,
-    NavLink,
-    Bars,
-    NavMenu,
-    NavBtn,
-    NavBtnLink
-} from './nav';
 import Welcome from './Welcome';
 import Announcement from './announcement';
 import UserForm from './login-up';
@@ -21,7 +13,8 @@ import SignIn from './SignIn';
 import UserLog from './User-log';
 
 const Header = () => {
-
+  
+    
     const ads = [
         {   
             type: "On Rent",
@@ -63,36 +56,37 @@ const Header = () => {
             img: "https://images.unsplash.com/photo-1574873215043-44119461cb3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3w4NTc4MzEyfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
         }
     ]
+
     return (
         <Router>
-            <>
-                <Nav className="NavBar">
-                    <NavLink to="/">
-                        <img src="" alt=""/>
-                    </NavLink>
-                    <Bars />
-                    <NavMenu>
-                        <NavLink to="/Sunsquare" activeStyle>
-                            SunSquare
-                        </NavLink>
-                        <NavLink to="/" activeStyle>
-                            Home
-                        </NavLink>
-                        <NavLink to="/my-announcements" activeStyle>
-                            My Announcements
-                        </NavLink>
-                        <NavLink to="/create-ad" activeStyle>
-                            Create your Advertisement
-                        </NavLink>
-                        <NavLink to="/sign-in" activeStyle>
-                            Sign In
-                        </NavLink>
-                    </NavMenu>
-                    <NavBtn>
-                        <NavBtnLink to="sign-up">Sign Up</NavBtnLink>
-                    </NavBtn>
-                </Nav>
-            </>
+            <nav className="Header">
+                <div>
+                    <div className="NavBar">
+                        <div className="NavBar-Items"><a href="Sunsquare" className="color-font"><span>SunSquare</span></a></div>
+                        <Link to="/" className="color-font">
+                            <div className="NavBar-Items"><a href="Home" className="color-font"><span>Home</span></a></div>
+                        </Link>
+                        <Link to="/my-announcements" className="color-font">
+                            <div className="NavBar-Items"><a href="Announcement" className="color-font"><span>My Announcements</span></a></div>
+                        </Link>
+                        <Link to="/create-ad" className="color-font">
+                            <div className="NavBar-Items"><a href="CreateAd" className="color-font"><span>Create your Advertisement</span></a></div>
+                        </Link>
+                        
+                    </div>
+                </div>
+               
+                <div>
+                    <div className="NavBar">
+                        <Link to="/sign-in" className="color-font">
+                            <div className="NavBar-Items"><a href="SignIn" className="color-font"><span>Sign In</span></a></div>
+                        </Link>
+                        <Link to="/sign-up" className="color-font">
+                            <div className="NavBar-Items"><a href="SignUp" className="color-font"><span>Sign Up</span></a></div>
+                        </Link>
+                    </div>
+                </div>
+            </nav>
             <Switch>
                 <Route path="/announcements">
                     <div className="top">
@@ -148,7 +142,7 @@ const Header = () => {
                 </Route>
                 <Route path="/sign-up">
                     <UserForm/>
-                </Route>
+                </Route>               
                 <Route path="/" exact>
                     <Welcome/>
                 </Route>

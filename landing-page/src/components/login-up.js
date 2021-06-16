@@ -30,7 +30,7 @@ const UserForm = ()=> {
     const sendData = (event)=> {
         event.preventDefault();
         console.log({datos})
-        fetch("http://35.231.58.85/users", {
+        /*fetch("http://35.231.58.85/users", {
             method: "POST",
             body: JSON.stringify({
                 datos
@@ -38,7 +38,7 @@ const UserForm = ()=> {
       headers: {
         "Content-type": "application/json; charset: UTF-8"
       }
-    });
+    });*/
     }
 
     return(

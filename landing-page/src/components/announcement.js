@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 
-const Announcement = (data)=> {
-
+const Announcement = (props)=> {
     const ads = [
         {   type: "On Rent",
             price: "3'000.000",
@@ -14,7 +13,7 @@ const Announcement = (data)=> {
             buildingfees: "50",
             contact: "3225646",
             description: "Nice Apartment in a exclusive zone, with a great view."
-        }
+        },
         {   type: "On Rent",
             price: "2'000.000",
             city: "Bogotá",
@@ -27,7 +26,6 @@ const Announcement = (data)=> {
             description: "Nice Apartment in a exclusive zone, with a great view."
         }
     ]
-    
 
     const info = {
         type: "On Rent",
@@ -43,8 +41,6 @@ const Announcement = (data)=> {
     }
 
     const [count, setCount] = useState(0);
-    
-    const [active, setActive] = useState(true);
 
     return (
         <div className="announcement">
@@ -59,23 +55,23 @@ const Announcement = (data)=> {
             <div className="announcement-card">
                 <div id="carouselExampleInterval" className="carousel slide card-img" data-ride="carousel">
                     <div className="carousel-inner">
-                        <div className="carousel-item " data-interval="10000">
+                        <div className="carousel-item active" data-interval="10000">
                             <img 
-                                src="https://images.unsplash.com/photo-1494203484021-3c454daf695d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw0ODEyOTQzfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                                src={props.img}
                                 className="d-block img-min" 
                                 alt="..."
                             />
                         </div>
-                        <div className="carousel-item active" data-interval="2000">
+                        <div className="carousel-item " data-interval="2000">
                             <img 
-                                src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MjB8NDgxMjk0M3x8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
+                                src={props.img} 
                                 className="d-block w-100 img-min" 
                                 alt="..."
                             />
                         </div>
                         <div className="carousel-item ">
                             <img 
-                                src="https://images.unsplash.com/photo-1574873215043-44119461cb3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3w4NTc4MzEyfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                                src={props.img}
                                 className="d-block w-100 img-min" 
                                 alt="..."
                             />
@@ -94,34 +90,34 @@ const Announcement = (data)=> {
                 <div className="card-text">
                     <div className="cart-text-line">
                         <div className="card-text-item bold">
-                            {info.city}
+                            {props.city}
                         </div>
                         <div className="card-text-item bold">
-                            {info.neighborhood}
+                            {props.neighborhood}
                         </div>
                         <div className="card-text-item">
                             <div className="bold p-r">Price:</div>
-                            {info.price}
+                            {props.price}
                         </div>
                     </div>
                     <div className="cart-text-line">
                         <div className="card-text-item">
                             <div className="bold p-r">Room:</div>
-                             {info.rooms}
+                             {props.rooms}
                         </div>
                         <div className="card-text-item ">
                             <div className="bold p-r">Bathroom:</div> 
-                            {info.bathrooms}
+                            {props.bathrooms}
                         </div>
                         <div className="card-text-item">
                             <div className="bold p-r">Carpark: </div>
-                            {info.carpark}
+                            {props.carpark}
                         </div>
                     </div>
                     <div className="cart-text-line">
                         <div className="card-text-item">
                             <div className="bold p-r">Buildingfee: </div>
-                            {info.buildingfees}
+                            {props.buildingfees}
                         </div>
                         <div className="card-text-item bold">
                             Integral kitchen
@@ -135,7 +131,7 @@ const Announcement = (data)=> {
                             Description
                         </div>
                         <div className="card-t">
-                            {info.description}
+                            {props.description}
                         </div>
                     </div>
                     <button className="btn btn-primary card-button" onClick={()=> setCount(count + 1)}>

@@ -32,14 +32,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
 }
 
 .NavBar-Items {
   display: flex;
-  padding: 0px 10px;
-  text-decoration: none;
+  padding: 0vw 1vw;
+  cursor: pointer;
+  min-height: 4vw;
+  max-height: 6vw;
+  align-items: center;
 }
 .user-log {
   display: flex;
@@ -295,6 +298,8 @@ body {
 
 .color-font {
   color:#0FD9AC;
+  text-decoration: none !important;
+  list-style: none !important;
 }
 
 .margin-top {

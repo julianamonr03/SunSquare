@@ -71,14 +71,14 @@ const Header = () => {
                 <div>
                     <div className="NavBar">
                         <div className="NavBar-Items"><a href="Sunsquare" className="color-font"><span>SunSquare</span></a></div>
-                        <Link to="/">
-                            <div className="NavBar-Items"><a href="Home" className="color-font">Home</a></div>
+                        <Link to="/" className="color-font">
+                            <div className="NavBar-Items"><a href="Home" className="color-font"><span>Home</span></a></div>
                         </Link>
-                        <Link to="/my-announcements">
-                            <div className="NavBar-Items"><a href="Announcement" className="color-font">My Announcements</a></div>
+                        <Link to="/my-announcements" className="color-font">
+                            <div className="NavBar-Items"><a href="Announcement" className="color-font"><span>My Announcements</span></a></div>
                         </Link>
-                        <Link to="/create-ad">
-                            <div className="NavBar-Items"><a href="CreateAd" className="color-font">Create your Advertisement</a></div>
+                        <Link to="/create-ad" className="color-font">
+                            <div className="NavBar-Items"><a href="CreateAd" className="color-font"><span>Create your Advertisement</span></a></div>
                         </Link>
                         
                     </div>
@@ -86,11 +86,11 @@ const Header = () => {
                
                 <div>
                     <div className="NavBar">
-                        <Link to="/sign-in">
-                            <div className="NavBar-Items"><a href="SignIn" className="color-font">Sign In</a></div>
+                        <Link to="/sign-in" className="color-font">
+                            <div className="NavBar-Items"><a href="SignIn" className="color-font"><span>Sign In</span></a></div>
                         </Link>
-                        <Link to="/sign-up">
-                            <div className="NavBar-Items"><a href="SignUp" className="color-font">Sign Up</a></div>
+                        <Link to="/sign-up" className="color-font">
+                            <div className="NavBar-Items"><a href="SignUp" className="color-font"><span>Sign Up</span></a></div>
                         </Link>
                     </div>
                 </div>

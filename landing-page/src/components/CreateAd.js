@@ -1,4 +1,10 @@
 import React, {Fragment, useState} from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from 'react-router-dom';
 
 
 const CreateAd = ()=> {
@@ -170,9 +176,9 @@ const CreateAd = ()=> {
                         </textarea>
                     </div>
                     <div>
-                        <button className="btn btn-primary Margin-left">
+                        <Link to="/my-announcements"  className="btn btn-primary my-button">
                             Create
-                        </button>
+                        </Link>
                     </div>
                 </form>
             </Fragment>

@@ -1,5 +1,11 @@
 import React from 'react';
 import { Fragment } from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from 'react-router-dom';
 
 const SignIn = () => {
     return (
@@ -28,10 +34,10 @@ const SignIn = () => {
                         />
                     </div>
                     <hr/>
-                    <div className="">
-                        <button className="btn btn-primary">
+                    <div>
+                        <Link to="/"  className="btn btn-primary my-button">
                             Send
-                        </button>
+                        </Link>
                     </div>
                 </form>
 

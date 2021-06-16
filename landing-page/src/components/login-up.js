@@ -1,5 +1,10 @@
 import React, {Fragment, useState} from 'react';
-//import {useForm} from 'react-hook-form';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from 'react-router-dom';
 
 const UserForm = ()=> {
     const [datos, setDatos] = useState({
@@ -145,9 +150,9 @@ const UserForm = ()=> {
                         </textarea>
                     </div>
                     <div>
-                        <button className="btn btn-primary ">
+                        <Link to="/"  className="btn btn-primary my-button">
                             Send
-                        </button>
+                        </Link>
                     </div>
                 </form>
             </Fragment>

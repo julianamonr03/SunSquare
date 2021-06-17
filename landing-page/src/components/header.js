@@ -64,6 +64,11 @@ const Header = () => {
             contact: "3225646243",
             description: "No description",
             img: "https://images.unsplash.com/photo-1574873215043-44119461cb3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3w4NTc4MzEyfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+            img1: "https://images.unsplash.com/photo-1614649024145-7f847b1c803f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXBhcnRtZW50JTIwaW50ZXJpb3JzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            img2: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YXBhcnRtZW50JTIwaW50ZXJpb3JzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            img3: "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YXBhcnRtZW50JTIwaW50ZXJpb3JzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
         }
     ]
     return (
@@ -84,7 +89,7 @@ const Header = () => {
                             Home
                         </NavLink>
                         <NavLink to="/my-announcements" activeStyle>
-                            My Announcements
+                            My announcements
                         </NavLink>
                         <NavLink to="/create-ad" activeStyle>
                             Create your Advertisement
@@ -143,7 +148,14 @@ const Header = () => {
                     </div>
                 </Route>
                 <Route path="/my-announcements">
-                    <MyAnnouncement/>
+                    <div className="">
+                        <div className="my-announ-title">My announcements</div>
+                        <div className="my-announs-section">
+                            <MyAnnouncement img={ads[3].img1} description={ads[0].description}/>
+                            <MyAnnouncement img={ads[3].img2} description={ads[1].description}/>
+                            <MyAnnouncement img={ads[3].img3} description={ads[2].description}/>
+                        </div>
+                    </div>
                 </Route>
                 <Route path="/create-ad">
                     <CreateAd/>

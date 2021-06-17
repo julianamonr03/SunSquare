@@ -3,7 +3,6 @@ import Card from "./card";
 import image1 from "../img/image1.jpg";
 import image2 from "../img/image2.jpg";
 import image3 from "../img/image3.jpg";
-import '../quartz/bootstrap.min.css';
 
 const jsontest = [
   {

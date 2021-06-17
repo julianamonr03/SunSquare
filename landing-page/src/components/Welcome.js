@@ -37,14 +37,6 @@ const UserSearch = ()=> {
             <Link to="/announcements"  className="btn btn-primary Margin-left my-button">
                 Search
             </Link>
-            
-            
-            
-            {/*<button className="btn btn-primary Margin-left my-button">
-                <Link to="/announcements"  className="color-font pointer">
-                    Search
-                </Link>
-    </button>*/}
         </div>
     )
 }

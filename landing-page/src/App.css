@@ -122,6 +122,7 @@ body {
   width: 50% !important;
 }
 
+
 .announcement {
   margin: auto;
   border-radius: 10px;
@@ -313,7 +314,7 @@ body {
 .Align-center {
   align-items: center !important;
   justify-content: center !important;
-  margin-top: 15px;
+  margin-top:1vw;
 }
 
 .color-font {
@@ -347,11 +348,18 @@ body {
 
 .my-button {
   cursor: pointer !important;
-  justify-content: center !important;
+  justify-content: center;
   background-color: #0FD9AC !important;
   color: black;
   border-color: #0FD9AC !important;
   width: 5vw;
+  height: 2.5vw;
+  border-radius: 0.5vw;
+  align-items:flex-end;
+  justify-content:flex-end;
+  text-align: center;
+  padding-top: 0.5vw;
+  text-decoration: none;
 }
 .my-button:hover {
   cursor: pointer !important;
@@ -360,6 +368,7 @@ body {
   color: #0FD9AC;
   border-color: #0FD9AC !important;
   width: 5vw;
+  text-decoration: none;
 }
 
 .pointer {
@@ -373,4 +382,8 @@ body {
 
 #root {
   background-color: #2f3640;
+}
+
+.My-announcement {
+  background-color: red;
 }

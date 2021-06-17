@@ -20,13 +20,13 @@ import CreateAd from './CreateAd';
 import SignIn from './SignIn';
 import UserLog from './User-log';
 import LOGO from '../img/LOGO.png';
-import Cards from './cards';
+import MyAnnouncement from './My-announcements';
 
 
 const Header = () => {
 
     const ads = [
-        {   
+        {
             type: "On Rent",
             price: "3'000.000",
             city: "Bogotá",
@@ -39,7 +39,7 @@ const Header = () => {
             description: "Nice Apartment in a exclusive zone, with a great view.",
             img: "https://images.unsplash.com/photo-1494203484021-3c454daf695d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw0ODEyOTQzfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
         },
-        {  
+        {
             type: "On Rent",
             price: "1'200.000",
             city: "Bogotá",
@@ -52,7 +52,7 @@ const Header = () => {
             description: "Apartment in optimal conditions",
             img: "https://images.unsplash.com/photo-1484154218962-a197022b5858?ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MjB8NDgxMjk0M3x8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
         },
-        {  
+        {
             type: "On Rent",
             price: "2'300.000",
             city: "Bogotá",
@@ -115,11 +115,11 @@ const Header = () => {
                         img={ads[0].img}
                     />
                     <Announcement
-                        type={ads[1].type} 
-                        price={ads[1].price} 
+                        type={ads[1].type}
+                        price={ads[1].price}
                         city={ads[1].city} 
-                        neighborhood={ads[1].neighborhood} 
-                        rooms={ads[1].rooms} 
+                        neighborhood={ads[1].neighborhood}
+                        rooms={ads[1].rooms}
                         bathrooms={ads[1].bathrooms} 
                         carpark={ads[1].carpark}
                         buildingfees={ads[1].buildingfees}
@@ -128,12 +128,12 @@ const Header = () => {
                         img={ads[1].img}
                     />
                     <Announcement
-                        type={ads[2].type} 
-                        price={ads[2].price} 
-                        city={ads[2].city} 
-                        neighborhood={ads[2].neighborhood} 
-                        rooms={ads[2].rooms} 
-                        bathrooms={ads[2].bathrooms} 
+                        type={ads[2].type}
+                        price={ads[2].price}
+                        city={ads[2].city}
+                        neighborhood={ads[2].neighborhood}
+                        rooms={ads[2].rooms}
+                        bathrooms={ads[2].bathrooms}
                         carpark={ads[2].carpark}
                         buildingfees={ads[2].buildingfees}
                         contact={ads[2].contact}
@@ -143,7 +143,7 @@ const Header = () => {
                     </div>
                 </Route>
                 <Route path="/my-announcements">
-                    <Cards/>
+                    <MyAnnouncement/>
                 </Route>
                 <Route path="/create-ad">
                     <CreateAd/>

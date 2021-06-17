@@ -3,6 +3,7 @@ import image1 from "../img/image1.jpg";
 import Form from "./form";
 import Modal from "react-bootstrap/Modal";
 
+
 function Card({ title, imagesource }) {
   let [show, setShow] = useState(false);
   const handleClose = () => setShow(false);

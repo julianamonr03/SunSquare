@@ -19,6 +19,9 @@ import UserForm from './login-up';
 import CreateAd from './CreateAd';
 import SignIn from './SignIn';
 import UserLog from './User-log';
+import LOGO from '../img/LOGO.png';
+import Cards from './cards';
+
 
 const Header = () => {
 
@@ -73,7 +76,9 @@ const Header = () => {
                     <Bars />
                     <NavMenu>
                         <NavLink to="/Sunsquare" activeStyle>
-                            SunSquare
+                            <span>
+                                <img src={LOGO} alt="" id="bar" />
+                            </span>
                         </NavLink>
                         <NavLink to="/" activeStyle>
                             Home
@@ -138,7 +143,7 @@ const Header = () => {
                     </div>
                 </Route>
                 <Route path="/my-announcements">
-                    <UserLog/>
+                    <Cards/>
                 </Route>
                 <Route path="/create-ad">
                     <CreateAd/>

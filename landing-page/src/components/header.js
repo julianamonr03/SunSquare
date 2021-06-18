@@ -18,7 +18,6 @@ import Announcement from './announcement';
 import UserForm from './login-up';
 import CreateAd from './CreateAd';
 import SignIn from './SignIn';
-import UserLog from './User-log';
 import LOGO from '../img/LOGO.png';
 import MyAnnouncement from './My-announcements';
 

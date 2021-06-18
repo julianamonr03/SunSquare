@@ -6,6 +6,7 @@ import {
     Link
 } from 'react-router-dom';
 import Team from './team';
+import Sections from './sections';
 
 
 const UserSearch = ()=> {
@@ -55,6 +56,7 @@ const Welcome = ()=> {
                 </div>
                 <UserSearch/>
             </div>
+            <Sections/>
             <Team/>
         </>
     )

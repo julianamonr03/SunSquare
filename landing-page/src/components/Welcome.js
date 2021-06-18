@@ -5,6 +5,7 @@ import {
     Route,
     Link
 } from 'react-router-dom';
+import Team from './team';
 
 
 const UserSearch = ()=> {
@@ -43,16 +44,19 @@ const UserSearch = ()=> {
 
 const Welcome = ()=> {
     return(
-        <div className="Welcome">
-            <div className="Welcome-image">
-                <img className="Image-1" src= "https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1949&q=80" alt="Home"></img>
+        <>
+            <div className="Welcome">
+                <div className="Welcome-image">
+                    <img className="Image-1" src= "https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1949&q=80" alt="Home"></img>
+                </div>
+                <div className="Welcome-mesage">
+                    <div ></div>
+                    <div>What are you looking for?</div>
+                </div>
+                <UserSearch/>
             </div>
-            <div className="Welcome-mesage">
-                <div ></div>
-                <div>What are you looking for?</div>
-            </div>
-            <UserSearch/>
-        </div>
+            <Team/>
+        </>
     )
 }
 

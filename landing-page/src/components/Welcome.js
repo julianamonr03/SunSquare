@@ -34,7 +34,7 @@ const UserSearch = ()=> {
                 </div>
             </div>
             <input type="text" className="form-control Search-space-1 Margin-left" placeholder="City or Neighborhood" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"></input>
-            <Link to="/announcements"  className="btn btn-primary Margin-left my-button">
+            <Link to="/announcements"  className=" Margin-left my-button">
                 Search
             </Link>
         </div>
@@ -57,32 +57,3 @@ const Welcome = ()=> {
 }
 
 export default Welcome;
-
-{/*
-class MyComponent extends React.Component {
-    state = {
-      redirect: false
-    }
-    setRedirect = () => {
-      this.setState({
-        redirect: true
-      })
-    }
-    renderRedirect = () => {
-      if (this.state.redirect) {
-        return <Redirect to='/target' />
-      }
-    }
-    render () {
-      return (
-         <div>
-          {this.renderRedirect()}
-          <button onClick={this.setRedirect}>Redirect</button>
-         </div>
-      )
-    }
-  }
-
-const navigate = useNavigate();
-const goToAnnoun = () => navigate('/announcements');
-*/}

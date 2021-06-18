@@ -308,7 +308,7 @@ body {
 
 
 .Margin-left {
-  margin-left: 15px !important;
+  margin-left: 1.2vw !important;
 }
 
 .Align-center {
@@ -352,7 +352,7 @@ body {
   background-color: #0FD9AC !important;
   color: black;
   border-color: #0FD9AC !important;
-  width: 5vw;
+  width: 6vw;
   height: 2.5vw;
   border-radius: 0.5vw;
   align-items:flex-end;
@@ -367,7 +367,7 @@ body {
   background-color: black !important;
   color: #0FD9AC;
   border-color: #0FD9AC !important;
-  width: 5vw;
+  width: 6vw;
   text-decoration: none;
 }
 

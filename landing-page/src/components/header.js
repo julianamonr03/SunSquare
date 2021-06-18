@@ -120,7 +120,7 @@ const Header = () => {
                     </NavLink>
                     <Bars />
                     <NavMenu>
-                        <NavLink to="/Sunsquare" activeStyle>
+                        <NavLink to="/" activeStyle>
                             <span>
                                 <img src={LOGO} alt="" id="bar" />
                             </span>

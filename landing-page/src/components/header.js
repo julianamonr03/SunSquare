@@ -71,6 +71,46 @@ const Header = () => {
             img3: "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YXBhcnRtZW50JTIwaW50ZXJpb3JzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
         }
     ]
+
+    const aspirants = [
+        {
+            firstName: "Juliana",
+            lastName: "Monroy",
+            email: "juliana@gmail.com",
+            age: "23",
+            typeOfWork: "Software Ingenier",
+            incomes: "7'000.000",
+            phoneNumber: "3125647389",
+            references: ""
+        },
+        {
+            firstName: "Martin",
+            lastName: "Corredor",
+            email: "dev.martincorredor@gmail.com",
+            age: "25",
+            typeOfWork: "Civil Ingenier",
+            incomes: "6'000.000",
+            phoneNumber: "3224682353",
+            references: ""
+        },
+        {
+            firstName: "Nelson",
+            lastName: "Arevalo"
+        },
+        {
+            firstName: "Oscar",
+            lastName: "Torres"
+        },
+        {
+            firstName:"Teresa",
+            lastName:"Amaya"
+        },
+        {
+            firstName:"Luis",
+            lastName:"Perez"
+        }
+    ]
+
     return (
         <Router>
             <>
@@ -151,9 +191,40 @@ const Header = () => {
                     <div className="">
                         <div className="my-announ-title">My announcements</div>
                         <div className="my-announs-section">
-                            <MyAnnouncement img={ads[3].img1} description={ads[0].description}/>
-                            <MyAnnouncement img={ads[3].img2} description={ads[1].description}/>
-                            <MyAnnouncement img={ads[3].img3} description={ads[2].description}/>
+                            <MyAnnouncement 
+                                img={ads[3].img1} 
+                                description={ads[0].description}
+                                firstName={aspirants[0].name}
+                                lastName={aspirants[0].lastName}
+                                email={aspirants[0].email}
+                                age={aspirants[0].age}
+                                typeOfWork={aspirants[0].typeOfWork}
+                                incomes={aspirants[0].incomes}
+                                phoneNumber={aspirants[0].phoneNumber}
+                                firstName3={aspirants[3].name}
+                                lastName3={aspirants[3].lastName}
+                            />
+                            <MyAnnouncement 
+                                img={ads[3].img2}
+                                description={ads[1].description}
+                                firstName={aspirants[1].name}
+                                lastName={aspirants[1].lastName}
+                                email={aspirants[1].email}
+                                age={aspirants[1].age}
+                                typeOfWork={aspirants[1].typeOfWork}
+                                incomes={aspirants[1].incomes}
+                                phoneNumber={aspirants[1].phoneNumber}
+                                firstName4={aspirants[4].name}
+                                lastName4={aspirants[4].lastName}
+                            />
+                            <MyAnnouncement 
+                                img={ads[3].img3}
+                                description={ads[2].description}
+                                firstName2={aspirants[2].name}
+                                lastName2={aspirants[2].lastName}
+                                firstName={aspirants[5].name}
+                                lastName={aspirants[5].lastName}
+                            />
                         </div>
                     </div>
                 </Route>

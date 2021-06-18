@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import {Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap';
 import MyModal from './modal';
-import { Fragment} from 'react';
-import { Link } from 'react-router-dom';
+import Aspirant from './aspirants';
 
 
 
@@ -33,6 +32,7 @@ const MyAnnouncement = (props)=> {
                 <div className="edit-button" onClick={openModal}>EDIT</div>
                 <div className="delete-button">DELETE</div>
             </div>
+            <Aspirant/>        
         </div>
 
 

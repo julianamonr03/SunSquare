@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 //ejercicio de formulario
 const Form = () => {
+  {/*
   let [city, setCity] = useState("");
   let [neighborhood, setNeighborhood] = useState("");
   let [rooms, setRooms] = useState("");
@@ -28,7 +29,7 @@ const Form = () => {
       }
     });
   };
-
+*/}
   return (
     <form onSubmit={(ev) => sendForm(ev)}>
       <fieldset>

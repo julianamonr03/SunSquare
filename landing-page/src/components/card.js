@@ -28,6 +28,7 @@ function Card({ title, imagesource }) {
             aria-label="Close"
             onClick={handleClose}
           ></button>
+          
         </Modal.Header>
         <Modal.Body>
           <Form />

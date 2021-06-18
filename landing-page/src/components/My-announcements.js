@@ -7,33 +7,7 @@ import { Link } from 'react-router-dom';
 
 
 const MyAnnouncement = (props)=> {
-    const [datos, setDatos] = useState({
-        type: "",
-        price: "",
-        city: "",
-        neighborhood: "",
-        rooms: "",
-        bathrooms: "",
-        carpark: "",
-        buildingfees: "",
-        contact: "",
-        description: ""
-    })
-
-    const handleInputChance = (event)=> {
-        setDatos({
-            ...datos,
-            [event.target.name] : event.target.value
-        })
-    }
-
     
-    const sendData = (event)=> {
-        event.preventDefault();
-        console.log(datos);
-    }
-
-
     const [open, setOpen] = useState(false)
 
     const openModal = ()=> {
@@ -66,7 +40,8 @@ const MyAnnouncement = (props)=> {
         <Modal isOpen={open} className="my-modal">
             <MyModal/>
         <ModalFooter>
-        <div className="edit-button"></div>
+        <div className="edit-button" onClick={closeModal}>Save</div>
+        <div className="delete-button" onClick={closeModal}>Cancel</div>
         </ModalFooter>
         </Modal>
         </>

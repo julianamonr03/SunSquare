@@ -35,7 +35,7 @@ const SignIn = () => {
                     </div>
                     <hr/>
                     <div>
-                        <Link to="/"  className="btn btn-primary my-button">
+                        <Link to="/my-announcements"  className="btn btn-primary my-button">
                             Send
                         </Link>
                     </div>

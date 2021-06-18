@@ -16,35 +16,35 @@ const MyAnnouncement = (props)=> {
         setOpen(false);
     }
     return (
-        <>
         <div className="My-announcement">
-            <div>
-                <img 
-                    src={props.img}
-                    className="img-my-announ" 
-                    alt="..."
-                />
+            <div >
+                <div>
+                    <img 
+                        src={props.img}
+                        className="img-my-announ" 
+                        alt="..."
+                    />
+                </div>
+                <div className="my-announ-des">
+                    {props.description}
+                </div>
+                <div className="announ-buttons-section">
+                    <div className="edit-button" onClick={openModal}>EDIT</div>
+                    <div className="delete-button">DELETE</div>
+                </div>
+                <Aspirant/>        
             </div>
-            <div className="my-announ-des">
-                {props.description}
-            </div>
-            <div className="announ-buttons-section">
-                <div className="edit-button" onClick={openModal}>EDIT</div>
-                <div className="delete-button">DELETE</div>
-            </div>
-            <Aspirant/>        
+
+
+
+            <Modal isOpen={open} className="my-modal">
+                <MyModal/>
+            <ModalFooter>
+            <div className="edit-button" onClick={closeModal}>Save</div>
+            <div className="delete-button" onClick={closeModal}>Cancel</div>
+            </ModalFooter>
+            </Modal>
         </div>
-
-
-
-        <Modal isOpen={open} className="my-modal">
-            <MyModal/>
-        <ModalFooter>
-        <div className="edit-button" onClick={closeModal}>Save</div>
-        <div className="delete-button" onClick={closeModal}>Cancel</div>
-        </ModalFooter>
-        </Modal>
-        </>
     )
 }
 

@@ -4,8 +4,8 @@ import React from 'react';
 const Team = ()=> {
     return (
         <div className="team-section">
-            <div>
-                Meet our Developers
+            <div className="team-teatle bold">
+                Meet our Developers!
             </div>
             <div className="team">
                 

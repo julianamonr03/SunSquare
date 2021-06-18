@@ -281,7 +281,7 @@ body {
   background-color: #2f3640;
   width: 100%;
   position: relative;
-  top: 40vh;
+  top: 30vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -386,8 +386,10 @@ body {
 }
 */
 .my-announ-title {
-  margin-top: 5vw;
+  position: relative;
+  top: 10vw;
   font-size: 2vw;
+  margin-bottom: 2vw;
 }
 
 .my-announs-section {
@@ -396,7 +398,10 @@ body {
   justify-content: center;
   margin-top: 2vw;
 }
+
 .My-announcement {
+  position: relative;
+  top:10vw;
   width: 27%;
   height: 70vh;
   margin:0vw 1.5vw;
@@ -420,6 +425,7 @@ body {
 
 .announ-buttons-section {
   display: flex;
+  padding: 1vw 0 2vw 0;
   flex-direction: row;
   justify-content: space-around;
   width: 70%;
@@ -587,6 +593,10 @@ body {
   justify-content: space-around;
 }
 
+.team-teatle {
+  font-size: 3vw;
+}
+
 .team {
   display: flex;
   flex-direction: row;
@@ -613,6 +623,5 @@ body {
 
 .team-linkedin {
   text-decoration: none;
-  text-shadow: 0px 2px 15px #0FD9AC;
-  color:;
+  text-shadow: 0px 2px 10px #0FD9AC;
 }

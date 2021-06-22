@@ -24,7 +24,7 @@ Endpoint | Description
 
 [Github - profile](https://github.com/julianamonr03)
 [<img align="center" alt="contact | Twitter" width="22px" src="https://github.com/deut-erium/deut-erium/blob/master/assets/twitter.svg" />](https://twitter.com/julianamonroy03)
-[<img align="center" alt="contact | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />](www.linkedin.com/in/juliana-monroy-perez)
+[<img align="center" alt="contact | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />](https://www.linkedin.com/in/juliana-monroy-perez)
 [<img align="center" alt="contact | Instagram" width="22px" src="https://github.com/hargun79/hargun79/blob/master/Assets/Instagram.svg" />](https://www.instagram.com/julianamonr03/)
 [<img align="center" alt="contact | Instagram" width="27px" src="https://github.com/deut-erium/deut-erium/blob/master/assets/discord.svg" />](https://discord.com/users/deuterium#0883)
 

@@ -1,8 +1,16 @@
+<div align="center">
+
 # **SunSquare**
+
+
+<img src="img/logo.jpg" width="500" height="300"/>
+
 
 ```
 The Application allows you to publish ads to connect owners and tenants or buyers through a matching system where we are the intermediaries so that contact between two people is not necessary until the pairing is done.
 ```
+
+<div align="left">
 
 ## **Endpoints**
 

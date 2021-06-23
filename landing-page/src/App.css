@@ -380,11 +380,7 @@ body {
   width: 150px;
   height: 75px;
 }
-/*
-#root {
-  background-color: #2f3640;
-}
-*/
+
 .my-announ-title {
   position: relative;
   top: 10vw;
@@ -626,3 +622,83 @@ body {
   text-shadow: 0px 2px 10px #0FD9AC;
 }
 
+
+
+/*sections*/
+.how-it-works-section {
+  position: relative;
+  top: 10vw;
+}
+
+.title-section {
+  font-size: 3vw;
+}
+
+.sections {
+  width: 100%;
+  position: relative;
+  margin: 5vw auto;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2vw;
+  justify-content: space-around;
+  padding-right: 7vw;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2vw;
+  justify-content: space-around;
+  padding-left: 7vw;
+}
+
+.img-section {
+  background-color: #0fd9ac;
+  border-radius: 2vw;
+}
+
+.img-how-works {
+  width: 15vw;
+  height: 15vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5vw;
+  max-width: 40vw;
+}
+
+.number-section {
+  width: 4vw;
+  height: 4vw;
+  margin-right: 2vw;
+}
+
+#heart {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 90px;
+  margin-right: 90px;
+  height: 120px;
+  width: 120px;
+}
+/*
+.img-sections {
+  width: 200px;
+  height: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+*/

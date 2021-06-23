@@ -6,7 +6,7 @@ import {
     Link
 } from 'react-router-dom';
 import Team from './team';
-import Sections from './sections';
+import Sections from './HowItWork';
 
 
 const UserSearch = ()=> {

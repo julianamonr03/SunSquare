@@ -7,6 +7,8 @@ import {
 } from 'react-router-dom';
 import Team from './team';
 import Sections from './HowItWork';
+import Logo from '../img/LOGO.png';
+import About from './About';
 
 
 const UserSearch = ()=> {
@@ -51,12 +53,13 @@ const Welcome = ()=> {
                     <img className="Image-1" src= "https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1949&q=80" alt="Home"></img>
                 </div>
                 <div className="Welcome-mesage">
-                    <div ></div>
+                    <img src={Logo} className="Logo-central"></img>
                     <div>What are you looking for?</div>
                 </div>
                 <UserSearch/>
             </div>
             <Sections/>
+            <About/>
             <Team/>
         </>
     )

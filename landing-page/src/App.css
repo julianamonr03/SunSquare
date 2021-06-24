@@ -618,12 +618,16 @@ body {
 .hack {
   width: 20vw;
   height: 15vw;
-  border: 4px solid;
+  border: 2px solid #DC21DB;
   border-radius: 1.5vw;
-  border-color: #DC21DB;
+  box-shadow: 0px 2px 15px #DC21DB;
   padding: 2vw 3vw;
 }
 
+hr {
+  width: 4px;
+  color: #0FD9AC;
+}
 
 /*Team section*/
 
@@ -660,7 +664,6 @@ body {
   border-radius: 50%;
   width: 10vw;
   margin: 2vw auto;
-  border: 4px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0px 2px 15px #0FD9AC;
 }
 

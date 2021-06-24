@@ -8,7 +8,15 @@
 
 ```
 The Application allows you to publish ads to connect owners and tenants or buyers through a matching system where we are the intermediaries so that contact between two people is not necessary until the pairing is done.
+
 ```
+------
+
+
+**If you want to take a look to our page copy and paste this route in your browser.**
+
+> 143.198.129.49
+
 
 <div align="left">
 
@@ -34,7 +42,7 @@ Endpoint | Description
 [<img align="center" alt="contact | Twitter" width="22px" src="https://github.com/deut-erium/deut-erium/blob/master/assets/twitter.svg" />](https://twitter.com/julianamonroy03)
 [<img align="center" alt="contact | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />](https://www.linkedin.com/in/juliana-monroy-perez)
 [<img align="center" alt="contact | Instagram" width="22px" src="https://github.com/hargun79/hargun79/blob/master/Assets/Instagram.svg" />](https://www.instagram.com/julianamonr03/)
-[<img align="center" alt="contact | Instagram" width="27px" src="https://github.com/deut-erium/deut-erium/blob/master/assets/discord.svg" />](https://discord.com/users/deuterium#0883)
+
 
 
 > Nelson Arevalo - Front-end Developer
